@@ -9,21 +9,48 @@ public class Swim : MonoBehaviour
  
     void Start()
     {
-        StartCoroutine(Rotate());
+        float rand = Random.Range(4f, 7f);
+        StartCoroutine(Rotate(rand));
     }
     void Update()
     {
         transform.position += transform.forward * Time.deltaTime * movementSpeed * dir;
     }
  
-    IEnumerator Rotate()
+    IEnumerator Rotate(float time)
     {
+        
         while(true)
         {
-            float rand = Random.Range(0f, 180f);
-            transform.Rotate(0, rand, 0, Space.Self);
- 
-            yield return new WaitForSeconds(5f);
+            int rand = Random.Range(0, 20);
+
+            for (int i = rand-1; i >= 0; i--)
+            {
+                transform.Rotate(0, rand-i, 0, Space.Self);
+                yield return new WaitForSeconds(.03f);
+            }
+
+            yield return new WaitForSeconds(time);
+        }
+        
+    }
+
+    IEnumerator TurnAround()
+    {
+
+        for (int i = 20-1; i >= 0; i--)
+        {
+            transform.Rotate(0, 20-i, 0, Space.Self);
+            yield return new WaitForSeconds(.03f);
+        }
+  
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.CompareTag("terrain"))
+        {
+            StartCoroutine(TurnAround());
         }
     }
 }
