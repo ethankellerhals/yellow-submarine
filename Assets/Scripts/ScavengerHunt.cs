@@ -28,6 +28,17 @@ public class ScavengerHunt : MonoBehaviour
     
         numFish.text = "You have found " + fishCount + " of the 8 fish";
 
+        float wrasse_dist = Vector3.Distance(transform.position, wrasse.transform.position);
+        float trumpet_dist = Vector3.Distance(transform.position, trumpet.transform.position);
+        float humu_dist = Vector3.Distance(transform.position, humu.transform.position);
+        float durgonTrigger_dist = Vector3.Distance(transform.position, durgonTrigger.transform.position);
+
+        float moorishIdol_dist = Vector3.Distance(transform.position, moorishIdol.transform.position);
+        float clownFish_dist = Vector3.Distance(transform.position, clownFish.transform.position);
+        float orangeRoughy_dist = Vector3.Distance(transform.position, orangeRoughy.transform.position);
+        float nassauGrouper_dist = Vector3.Distance(transform.position, nassauGrouper.transform.position);
+
+
         if (fishCount == 0)
         {
             fish.text = "Wrasse";
@@ -65,21 +76,22 @@ public class ScavengerHunt : MonoBehaviour
         // check if player/camera collides with or is close to the fish you're looking for
       
         // float distance = Vector3.Distance(player.transform.position, the fish you're looking for.transform.position);
-        // if (distance < some number)
+        // if (distance < 5)
         // {
         //      fishCount++
         // }  
+
         
     }
 
 
     // OR if the player has a rigidbody/mesh collider  
 
-    // void OnCollisionEnter(Collision collision)
-    // {
-    //     if(collision.gameObject.tag == fish.text)
-    //     {
-    //         fishCount++;
-    //     }
-    // }
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == fish.text)
+        {
+            fishCount++;
+        }
+    }
 }
