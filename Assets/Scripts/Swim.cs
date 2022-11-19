@@ -6,6 +6,8 @@ public class Swim : MonoBehaviour
 {
     public int movementSpeed = 2;
     public int dir = 1;
+
+    private bool check = false;
  
     void Start()
     {
@@ -37,18 +39,19 @@ public class Swim : MonoBehaviour
 
     IEnumerator TurnAround()
     {
-
+        check = true;
         for (int i = 20-1; i >= 0; i--)
         {
             transform.Rotate(0, 20-i, 0, Space.Self);
             yield return new WaitForSeconds(.03f);
         }
-        transform.position += transform.forward * Time.deltaTime * movementSpeed * dir;
+        //transform.position += transform.forward * 5;
+        check = false;
     }
 
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.CompareTag("terrain"))
+        if(col.gameObject.CompareTag("terrain") && !check)
         {
             StartCoroutine(TurnAround());
         }
