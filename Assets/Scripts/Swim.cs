@@ -43,7 +43,7 @@ public class Swim : MonoBehaviour
             transform.Rotate(0, 20-i, 0, Space.Self);
             yield return new WaitForSeconds(.03f);
         }
-  
+        transform.position += transform.forward * Time.deltaTime * movementSpeed * dir;
     }
 
     void OnTriggerEnter(Collider col)
