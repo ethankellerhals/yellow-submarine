@@ -14,7 +14,15 @@ More sensory experiences to come, for example we plan on using a candle to repro
 **OUTSIDE SOURCES**  
 
 Video Sound Credits: https://www.youtube.com/watch?v=la_AEFO8m7U
+Arm Swinging Movement Code: https://www.sebastianjiroschlecht.com/courses/cvw2021/week3/customlocomotion/#custom-locomotion
 
 **Project Milestone 3**
 
 We implemented two navagation techniques. One uses the joystick to move around in the scene. The other uses the pull and grab technique with the controllers to make it seem as if you are moving your arms and swiming underwater. For the wayfinding technique, we added two signs into the scene to help the player understand what game is and to give the player a visual fish index so that they know what they are looking for. For the manipulation technique, we used colliders to check if the player comes near a fish, which then checks if it is the correct fish they are looking for and if so, increases the number of fish found by 1.
+
+User Experience Feedback:
+    -Does the movement system feel intuitive?
+    -Did you prefer the joystick controls or the grab to move controls? Why?
+    -Are you able to understand your objective based on the information given to you on the screen?
+    -Would you prefer to have a note on the interface telling you how far you are from the fish you are looking for?
+    -Any general feedback?
