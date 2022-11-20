@@ -22,7 +22,7 @@ We implemented two navagation techniques. One uses the joystick to move around i
 
 User Experience Feedback:
     -Does the movement system feel intuitive?
-    -Did you prefer the joystick controls or the grab to move controls? Why?
+    -Did you prefer the joystick controls or the swing to move controls? Why?
     -Are you able to understand your objective based on the information given to you on the screen?
     -Would you prefer to have a note on the interface telling you how far you are from the fish you are looking for?
     -Any general feedback?
