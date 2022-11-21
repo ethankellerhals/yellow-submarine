@@ -21,7 +21,13 @@ We implemented two navagation techniques. One uses the joystick to move around i
 
 User Experience Feedback:
     -Does the movement system feel intuitive?
-    -
-    -Are you able to understand your objective based on the information given to you on the screen?
-    -Would you prefer to have a note on the interface telling you how far you are from the fish you are looking for?
-    -Any general feedback?
+    Both users enjoyed the movement experience, though one commented that it was rather difficult to find how to move up or down, as the joysticks did not provide that movement. When the locomotion system was changed to swinging arms to move, one commented that they felt more immersed in the experience, like she was actually swimming, while the other believes that it took away from the visuals of the game as it was harder to figure out the controls, and it was harder to move precisely.
+    
+    -*Are you able to understand your objective based on the information given to you on the screen?*
+    Both users were able to figure out what their objective was, however it was difficult without instruction for either to figure out which fish they were going after.
+
+    -*Would you prefer to have a note on the interface telling you how far you are from the fish you are looking for?*
+    Both users agreed that it would be helpful to have an interface feature to determine where the fish you were looking for was.
+
+    -*Any general feedback?*
+    One user commented that she would like to see a better method of selection when getting near the fish, as it was unclear whether the user actually reached the fish or not. The other user believes the play area should be smaller, as it was very hard to find the first fish, much less the others.
