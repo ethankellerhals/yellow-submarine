@@ -17,7 +17,7 @@ Video Sound Credits: https://www.youtube.com/watch?v=la_AEFO8m7U
 
 **Project Milestone 3**
 
-We implemented two navagation techniques. One uses the joystick to move around in the scene. The other uses the pull and grab technique with the controllers to make it seem as if you are moving your arms and swiming underwater. For the wayfinding technique, we added two signs into the scene to help the player understand what game is and to give the player a visual fish index so that they know what they are looking for. For the manipulation technique, we used colliders to check if the player comes near a fish, which then checks if it is the correct fish they are looking for and if so, increases the number of fish found by 1.
+We implemented two navagation techniques. One uses the joystick to move around in the scene. The other uses a motion technique based on swinging your arms with the controllers to make it seem as if you are moving and swiming underwater. For the wayfinding technique, we added two signs into the scene to help the player understand what game is and to give the player a visual fish index so that they know what they are looking for. For the manipulation technique, we used colliders to check if the player comes near a fish, which then checks if it is the correct fish they are looking for and if so, increases the number of fish found by 1.
 
 User Experience Feedback:
     -Does the movement system feel intuitive?
