@@ -7,8 +7,6 @@ public class ScavengerHunt : MonoBehaviour
 {
 
     [SerializeField] public int speed;
-
-    [SerializeField] private Text distanceText; //sent to UI; displays distance value
     
     [SerializeField] Transform distanceToFish; // distance from the current fish
 
@@ -29,9 +27,8 @@ public class ScavengerHunt : MonoBehaviour
 
     public TextMeshProUGUI fish;
     public TextMeshProUGUI numFish;
-
+    public TextMeshProUGUI distanceText; //sent to UI; displays distance value
     
-
     void Update()
     {
     
@@ -49,7 +46,6 @@ public class ScavengerHunt : MonoBehaviour
         
         //distanceToFish is the reference for the current fish. rename if needed
         //distanceValue = (distanceToFish.transform.position - transform.position).magnitude;
-
         //distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";
 
 
@@ -101,19 +97,8 @@ public class ScavengerHunt : MonoBehaviour
             distanceValue = (nassauGrouper.transform.position - transform.position).magnitude;
             distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";            
         }
-
-
-        // check if player/camera collides with or is close to the fish you're looking for
-      
-        // float distance = Vector3.Distance(player.transform.position, the fish you're looking for.transform.position);
-        // if (distance < 5)
-        // {
-        //      fishCount++
-        // }  
-
         
     }
-
 
     // OR if the player has a rigidbody/mesh collider  
 
