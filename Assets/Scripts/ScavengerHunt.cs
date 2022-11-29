@@ -25,7 +25,7 @@ public class ScavengerHunt : MonoBehaviour
     public GameObject orangeRoughy;
     public GameObject nassauGrouper;
 
-    private int fishCount = 1;
+    private int fishCount = 0;
 
     public TextMeshProUGUI fish;
     public TextMeshProUGUI numFish;
