@@ -8,6 +8,13 @@ public class ScavengerHunt : MonoBehaviour
 
     [SerializeField] public int speed;
 
+    [SerializeField] private Text distanceText; //sent to UI; displays distance value
+    
+    [SerializeField] Transform distanceToFish; // distance from the current fish
+
+    private float distanceValue; //distance value
+
+
     public GameObject wrasse;
     public GameObject trumpet;
     public GameObject humu;
@@ -23,6 +30,8 @@ public class ScavengerHunt : MonoBehaviour
     public TextMeshProUGUI fish;
     public TextMeshProUGUI numFish;
 
+    
+
     void Update()
     {
     
@@ -37,39 +46,60 @@ public class ScavengerHunt : MonoBehaviour
         float clownFish_dist = Vector3.Distance(transform.position, clownFish.transform.position);
         float orangeRoughy_dist = Vector3.Distance(transform.position, orangeRoughy.transform.position);
         float nassauGrouper_dist = Vector3.Distance(transform.position, nassauGrouper.transform.position);
+        
+        //distanceToFish is the reference for the current fish. rename if needed
+        //distanceValue = (distanceToFish.transform.position - transform.position).magnitude;
+
+        //distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";
 
 
         if (fishCount == 0)
         {
             fish.text = "Wrasse";
+            distanceValue = (wrasse.transform.position - transform.position).magnitude;
+            distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         if (fishCount == 1)
         {
             fish.text = "Trumpet";
+            distanceValue = (trumpet.transform.position - transform.position).magnitude;
+            distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         if (fishCount == 2)
         {
             fish.text = "Humu";
+            distanceValue = (humu.transform.position - transform.position).magnitude;
+            distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";            
         }
         if (fishCount == 3)
         {
             fish.text = "Durgon Trigger";
+            distanceValue = (durgonTrigger.transform.position - transform.position).magnitude;
+            distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";            
         }
         if (fishCount == 4)
         {
             fish.text = "Moorish Idol";
+            distanceValue = (moorishIdol.transform.position - transform.position).magnitude;
+            distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";            
         }
         if (fishCount == 5)
         {
             fish.text = "Clownfish";
+            distanceValue = (clownFish.transform.position - transform.position).magnitude;
+            distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";            
         }
         if (fishCount == 6)
         {
             fish.text = "Orange Roughy";
+            distanceValue = (orangeRoughy.transform.position - transform.position).magnitude;
+            distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";            
         }
         if (fishCount == 7)
         {
             fish.text = "Nassau Grouper";
+            distanceValue = (nassauGrouper.transform.position - transform.position).magnitude;
+            distanceText.text = "Distance: " + distanceValue.ToString("F1") + " meters";            
         }
 
 
