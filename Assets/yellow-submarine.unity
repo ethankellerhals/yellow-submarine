@@ -3079,6 +3079,7 @@ MonoBehaviour:
   fish: {fileID: 1233430142}
   numFish: {fileID: 1466978240}
   success: {fileID: 169927433}
+  sound: {fileID: 8300000, guid: eff349a2ff119074cbcda7b74204f389, type: 3}
 --- !u!65 &450518977
 BoxCollider:
   m_ObjectHideFlags: 0

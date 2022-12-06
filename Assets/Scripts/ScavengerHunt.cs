@@ -22,6 +22,7 @@ public class ScavengerHunt : MonoBehaviour
     public TextMeshProUGUI numFish;
 
     public AudioSource success;
+    public AudioClip sound;
 
     void Update()
     {
@@ -63,10 +64,10 @@ public class ScavengerHunt : MonoBehaviour
 
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == fish.text)
+        if (collision.gameObject.tag == fish.text && !success.isPlaying)
         {
             fishCount++;
-            success.Play();
+            success.PlayOneShot(sound);
         }
         //else if (trumpet == collision.gameObject.name)
         //{
