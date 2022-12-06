@@ -21,6 +21,8 @@ public class ScavengerHunt : MonoBehaviour
     public TextMeshProUGUI fish;
     public TextMeshProUGUI numFish;
 
+    public AudioSource success;
+
     void Update()
     {
         numFish.text = "You have found " + fishCount + " of the 8 fish";
@@ -64,6 +66,7 @@ public class ScavengerHunt : MonoBehaviour
         if (collision.gameObject.tag == fish.text)
         {
             fishCount++;
+            success.Play();
         }
         //else if (trumpet == collision.gameObject.name)
         //{
