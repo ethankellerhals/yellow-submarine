@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/yellow-submarine.unity
     guid: c8f577b717f3e564f9f0c1ecd92e6d84
+  - enabled: 1
+    path: Assets/yellow-submarine-v2.unity
+    guid: fbd3ef90c561da44bbb6e195115e38a4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9a25ab66fec9f6a4d835ff1bf8626eb6, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d8f2b5472893d104bb4ff4b28dddb32b, type: 2}
