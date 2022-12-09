@@ -24,41 +24,41 @@ public class ScavengerHunt : MonoBehaviour
     public AudioSource success;
     public AudioClip sound;
 
-    void Update()
+        void Update()
     {
         numFish.text = "You have found " + fishCount + " of the 8 fish";
 
         if (fishCount == 0)
         {
-            fish.text = "Wrasse";
+            fish.text = "Find the golden cleaner wrasse";
         }
         if (fishCount == 1)
         {
-            fish.text = "Trumpet";
+            fish.text = "Find the trumpet fish";
         }
         if (fishCount == 2)
         {
-            fish.text = "Humu";
+            fish.text = "Find the humu";
         }
         if (fishCount == 3)
         {
-            fish.text = "Durgon Trigger";
+            fish.text = "Find the durgon trigger";
         }
         if (fishCount == 4)
         {
-            fish.text = "Moorish Idol";
+            fish.text = "Find the moorish idol";
         }
         if (fishCount == 5)
         {
-            fish.text = "Clownfish";
+            fish.text = "Find the clownfish";
         }
         if (fishCount == 6)
         {
-            fish.text = "Orange Roughy";
+            fish.text = "Find the orange roughy";
         }
         if (fishCount == 7)
         {
-            fish.text = "Nassau Grouper";
+            fish.text = "Find the nassau grouper";
         }
     }
 
