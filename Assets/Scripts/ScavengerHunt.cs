@@ -26,6 +26,8 @@ public class ScavengerHunt : MonoBehaviour
     public AudioSource success;
     public AudioClip sound;
 
+    
+
     void Update()
     {
 
@@ -42,7 +44,7 @@ public class ScavengerHunt : MonoBehaviour
 
         if (fishCount == 0)
         {
-            fish.text = "Find the golden cleaner wrasse";
+            fish.text = "Wrasse";
 
             // Distance
             wrasse_dist = Vector3.Distance(transform.position, wrasse.transform.position);
@@ -51,7 +53,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         if (fishCount == 1)
         {
-            fish.text = "Find the trumpet fish";
+            fish.text = "Trumpet";
 
             // Distance
             trumpet_dist = Vector3.Distance(transform.position, trumpet.transform.position);
@@ -60,7 +62,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         if (fishCount == 2)
         {
-            fish.text = "Find the humu";
+            fish.text = "Humu";
 
             // Distance
             humu_dist = Vector3.Distance(transform.position, humu.transform.position);
@@ -69,7 +71,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         if (fishCount == 3)
         {
-            fish.text = "Find the durgon trigger";
+            fish.text = "Durgon Trigger";
 
             // Distance
             durgonTrigger_dist = Vector3.Distance(transform.position, durgonTrigger.transform.position);
@@ -78,7 +80,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         if (fishCount == 4)
         {
-            fish.text = "Find the moorish idol";
+            fish.text = "Moorish Idol";
 
             // Distance
             moorishIdol_dist = Vector3.Distance(transform.position, moorishIdol.transform.position);
@@ -87,7 +89,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         if (fishCount == 5)
         {
-            fish.text = "Find the clownfish";
+            fish.text = "Clownfish";
 
             // Distance
             clownFish_dist = Vector3.Distance(transform.position, clownFish.transform.position);
@@ -96,7 +98,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         if (fishCount == 6)
         {
-            fish.text = "Find the orange roughy";
+            fish.text = "Orange Roughy";
 
             // Distance
             orangeRoughy_dist = Vector3.Distance(transform.position, orangeRoughy.transform.position);
@@ -105,7 +107,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         if (fishCount == 7)
         {
-            fish.text = "Find the nassau grouper";
+            fish.text = "Nassau Grouper";
 
             // Distance
             nassauGrouper_dist = Vector3.Distance(transform.position, nassauGrouper.transform.position);
