@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
+//using UnityEngine.XR;
  
 public class Swim : MonoBehaviour
 {
@@ -15,11 +15,11 @@ public class Swim : MonoBehaviour
  
     void Start()
     {
-        List<InputDevice> devices = new List<InputDevice>();
-        InputDevices.GetDevices(devices);
-        foreach (var item in devices) {
-            Debug.Log(item.name + item.characteristics);
-        }
+        // List<InputDevice> devices = new List<InputDevice>();
+        // InputDevices.GetDevices(devices);
+        // foreach (var item in devices) {
+        //     Debug.Log(item.name + item.characteristics);
+        // }
 
         float rand = Random.Range(4f, 7f);
         StartCoroutine(Rotate(rand));
