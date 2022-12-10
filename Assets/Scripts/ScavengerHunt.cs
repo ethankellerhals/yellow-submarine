@@ -40,7 +40,7 @@ public class ScavengerHunt : MonoBehaviour
             temp = fishArray[random_num];
             fishArray[random_num] = fishArray[i];
             fishArray[i] = temp;
-            print(fishArray[i]);
+            //print(fishArray[i]);
         }
         
     }
