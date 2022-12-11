@@ -70,13 +70,15 @@ public class ScavengerHunt : MonoBehaviour
         }
 
         if (fishArray[fishCount] == "Wrasse") {
-            fish.text = "Wrasse";
+            fish.text = "Find: Golden Cleaner Wrasse";
+
+            //Distance
             wrasse_dist = Vector3.Distance(transform.position, wrasse.transform.position);
             distanceValue = (wrasse.transform.position - transform.position).magnitude;
             distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         else if (fishArray[fishCount] == "Trumpet") {
-            fish.text = "Trumpet";
+            fish.text = "Find: Trumpet Fish";
 
             // Distance
             trumpet_dist = Vector3.Distance(transform.position, trumpet.transform.position);
@@ -84,7 +86,7 @@ public class ScavengerHunt : MonoBehaviour
             distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         else if (fishArray[fishCount] == "Humu") {
-            fish.text = "Humu";
+            fish.text = "Find: Humu";
 
             // Distance
             humu_dist = Vector3.Distance(transform.position, humu.transform.position);
@@ -92,7 +94,7 @@ public class ScavengerHunt : MonoBehaviour
             distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         else if (fishArray[fishCount] == "Durgon Trigger") {
-            fish.text = "Durgon Trigger";
+            fish.text = "Find: Black Durgon";
 
             // Distance
             durgonTrigger_dist = Vector3.Distance(transform.position, durgonTrigger.transform.position);
@@ -100,7 +102,7 @@ public class ScavengerHunt : MonoBehaviour
             distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         else if (fishArray[fishCount] == "Moorish Idol") {
-            fish.text = "Moorish Idol";
+            fish.text = "Find: Moorish Idol";
 
             // Distance
             moorishIdol_dist = Vector3.Distance(transform.position, moorishIdol.transform.position);
@@ -108,7 +110,7 @@ public class ScavengerHunt : MonoBehaviour
             distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         else if (fishArray[fishCount] == "Clownfish") {
-            fish.text = "Clownfish";
+            fish.text = "Find: Clownfish";
 
             // Distance
             clownFish_dist = Vector3.Distance(transform.position, clownFish.transform.position);
@@ -116,7 +118,7 @@ public class ScavengerHunt : MonoBehaviour
             distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         else if (fishArray[fishCount] == "Orange Roughy") {
-            fish.text = "Orange Roughy";
+            fish.text = "Find: Orange Roughy";
 
             // Distance
             orangeRoughy_dist = Vector3.Distance(transform.position, orangeRoughy.transform.position);
@@ -124,7 +126,7 @@ public class ScavengerHunt : MonoBehaviour
             distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         else if (fishArray[fishCount] == "Nassau Grouper") {
-            fish.text = "Nassau Grouper";
+            fish.text = "Find: Nassau Grouper";
 
             // Distance
             nassauGrouper_dist = Vector3.Distance(transform.position, nassauGrouper.transform.position);

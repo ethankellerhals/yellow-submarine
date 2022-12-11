@@ -6,14 +6,14 @@ TagManager:
   tags:
   - fish
   - terrain
-  - Wrasse
-  - Trumpet
-  - Humu
-  - Durgon Trigger
-  - Clownfish
-  - Orange Roughy
-  - Nassau Grouper
-  - Moorish Idol
+  - 'Find: Humu'
+  - 'Find: Orange Roughy'
+  - 'Find: Moorish Idol'
+  - 'Find: Nassau Grouper'
+  - 'Find: Clownfish'
+  - 'Find: Trumpet Fish'
+  - 'Find: Golden Cleaner Wrasse'
+  - 'Find: Black Durgon'
   layers:
   - Default
   - TransparentFX
