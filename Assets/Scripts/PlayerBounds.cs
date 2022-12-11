@@ -17,6 +17,7 @@ public class PlayerBounds : MonoBehaviour
         if(col.gameObject.CompareTag("terrain"))
         {
             turnAround.text = "TURN BACK";
+            StartCoroutine(Timer());
         }
 
         transform.Rotate(0, 180, 0);
