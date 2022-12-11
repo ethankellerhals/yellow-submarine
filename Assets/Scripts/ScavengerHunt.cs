@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.XR;
 using TMPro;
 
 public class ScavengerHunt : MonoBehaviour
@@ -22,7 +21,7 @@ public class ScavengerHunt : MonoBehaviour
     public TextMeshProUGUI fish;
     public TextMeshProUGUI numFish;
     public TextMeshProUGUI distance;
-
+    public TextMeshProUGUI fact;
 
     public AudioSource success;
     public AudioClip sound;
@@ -64,13 +63,15 @@ public class ScavengerHunt : MonoBehaviour
         }
         else
         {
-            numFish.text = "Congrats! You have found all 8 fish";
-            fish.text = "";
+            numFish.text = "";
+            fish.text = "Congrats! You have found all 8 fish";
             distance.text = "";
+            fact.text = "";
         }
 
         if (fishArray[fishCount] == "Wrasse") {
             fish.text = "Find: Golden Cleaner Wrasse";
+            fact.text = "Fact: Salt water species found in regions of Hawaii";
 
             //Distance
             wrasse_dist = Vector3.Distance(transform.position, wrasse.transform.position);
@@ -79,6 +80,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         else if (fishArray[fishCount] == "Trumpet") {
             fish.text = "Find: Trumpet Fish";
+            fact.text = "Fact: Can grow to be 24 to 36 inches long";
 
             // Distance
             trumpet_dist = Vector3.Distance(transform.position, trumpet.transform.position);
@@ -87,6 +89,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         else if (fishArray[fishCount] == "Humu") {
             fish.text = "Find: Humu";
+            fact.text = "Fact: The official state fish of Hawaii";
 
             // Distance
             humu_dist = Vector3.Distance(transform.position, humu.transform.position);
@@ -95,6 +98,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         else if (fishArray[fishCount] == "Durgon Trigger") {
             fish.text = "Find: Black Durgon";
+            fact.text = "Fact: An omnivore that feeds on small fish, squid, algae and other plants";
 
             // Distance
             durgonTrigger_dist = Vector3.Distance(transform.position, durgonTrigger.transform.position);
@@ -103,6 +107,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         else if (fishArray[fishCount] == "Moorish Idol") {
             fish.text = "Find: Moorish Idol";
+            fact.text = "Fact: Have a uniquely long dorsal fin that trails behind as it swims";
 
             // Distance
             moorishIdol_dist = Vector3.Distance(transform.position, moorishIdol.transform.position);
@@ -111,6 +116,7 @@ public class ScavengerHunt : MonoBehaviour
         }
         else if (fishArray[fishCount] == "Clownfish") {
             fish.text = "Find: Clownfish";
+            fact.text = "Fact: Form symbiotic relationships with sea anemones";
 
             // Distance
             clownFish_dist = Vector3.Distance(transform.position, clownFish.transform.position);
@@ -119,6 +125,8 @@ public class ScavengerHunt : MonoBehaviour
         }
         else if (fishArray[fishCount] == "Orange Roughy") {
             fish.text = "Find: Orange Roughy";
+            fact.text = "Fact: Nearly extinct deep ocean fish";
+
 
             // Distance
             orangeRoughy_dist = Vector3.Distance(transform.position, orangeRoughy.transform.position);
@@ -127,85 +135,13 @@ public class ScavengerHunt : MonoBehaviour
         }
         else if (fishArray[fishCount] == "Nassau Grouper") {
             fish.text = "Find: Nassau Grouper";
+            fact.text = "Fact: Nearly extinct high-level predator that lives on the coral reefs";
 
             // Distance
             nassauGrouper_dist = Vector3.Distance(transform.position, nassauGrouper.transform.position);
             distanceValue = (nassauGrouper.transform.position - transform.position).magnitude;
             distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
-
-        // if (fishCount == 0)
-        // {
-        //     fish.text = "Wrasse";
-
-        //     // Distance
-        //     wrasse_dist = Vector3.Distance(transform.position, wrasse.transform.position);
-        //     distanceValue = (wrasse.transform.position - transform.position).magnitude;
-        //     distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
-        // }
-        // if (fishCount == 1)
-        // {
-        //     fish.text = "Trumpet";
-
-        //     // Distance
-        //     trumpet_dist = Vector3.Distance(transform.position, trumpet.transform.position);
-        //     distanceValue = (trumpet.transform.position - transform.position).magnitude;
-        //     distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
-        // }
-        // if (fishCount == 2)
-        // {
-        //     fish.text = "Humu";
-
-        //     // Distance
-        //     humu_dist = Vector3.Distance(transform.position, humu.transform.position);
-        //     distanceValue = (humu.transform.position - transform.position).magnitude;
-        //     distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
-        // }
-        // if (fishCount == 3)
-        // {
-        //     fish.text = "Durgon Trigger";
-
-        //     // Distance
-        //     durgonTrigger_dist = Vector3.Distance(transform.position, durgonTrigger.transform.position);
-        //     distanceValue = (durgonTrigger.transform.position - transform.position).magnitude;
-        //     distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
-        // }
-        // if (fishCount == 4)
-        // {
-        //     fish.text = "Moorish Idol";
-
-        //     // Distance
-        //     moorishIdol_dist = Vector3.Distance(transform.position, moorishIdol.transform.position);
-        //     distanceValue = (durgonTrigger.transform.position - transform.position).magnitude;
-        //     distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
-        // }
-        // if (fishCount == 5)
-        // {
-        //     fish.text = "Clownfish";
-
-        //     // Distance
-        //     clownFish_dist = Vector3.Distance(transform.position, clownFish.transform.position);
-        //     distanceValue = (clownFish.transform.position - transform.position).magnitude;
-        //     distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
-        // }
-        // if (fishCount == 6)
-        // {
-        //     fish.text = "Orange Roughy";
-
-        //     // Distance
-        //     orangeRoughy_dist = Vector3.Distance(transform.position, orangeRoughy.transform.position);
-        //     distanceValue = (orangeRoughy.transform.position - transform.position).magnitude;
-        //     distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
-        // }
-        // if (fishCount == 7)
-        // {
-        //     fish.text = "Nassau Grouper";
-
-        //     // Distance
-        //     nassauGrouper_dist = Vector3.Distance(transform.position, nassauGrouper.transform.position);
-        //     distanceValue = (nassauGrouper.transform.position - transform.position).magnitude;
-        //     distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
-        // }
     }
 
     void OnTriggerEnter(Collider collision)
