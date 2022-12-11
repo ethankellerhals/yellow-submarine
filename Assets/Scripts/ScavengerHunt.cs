@@ -58,7 +58,16 @@ public class ScavengerHunt : MonoBehaviour
         float orangeRoughy_dist;
         float nassauGrouper_dist;
 
-        numFish.text = "You have found " + fishCount + " of the 8 fish";
+        if (fishCount != 8)
+        {
+            numFish.text = "You have found " + fishCount + " of the 8 fish";
+        }
+        else
+        {
+            numFish.text = "Congrats! You have found all 8 fish";
+            fish.text = "";
+            distance.text = "";
+        }
 
         if (fishArray[fishCount] == "Wrasse") {
             fish.text = "Wrasse";
@@ -95,7 +104,7 @@ public class ScavengerHunt : MonoBehaviour
 
             // Distance
             moorishIdol_dist = Vector3.Distance(transform.position, moorishIdol.transform.position);
-            distanceValue = (durgonTrigger.transform.position - transform.position).magnitude;
+            distanceValue = (moorishIdol.transform.position - transform.position).magnitude;
             distance.text = "Distance: " + distanceValue.ToString("F1") + " meters";
         }
         else if (fishArray[fishCount] == "Clownfish") {
