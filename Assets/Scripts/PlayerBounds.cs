@@ -20,7 +20,7 @@ public class PlayerBounds : MonoBehaviour
             StartCoroutine(Timer());
         }
 
-        transform.Rotate(0, 180, 0);
+        transform.Rotate(0, 180f, 0, Space.Self);
     }
 
     IEnumerator Timer()
