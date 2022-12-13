@@ -31,3 +31,7 @@ User Experience Feedback:
 
     -*Any general feedback?*
     One user commented that she would like to see a better method of selection when getting near the fish, as it was unclear whether the user actually reached the fish or not. The other user believes the play area should be smaller, as it was very hard to find the first fish, much less the others.
+
+**Running The Project**
+
+The final version of this project is in the scene yellow-submarine-v2
